@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş ve Kaydolma</title>
+  <link rel="stylesheet" href="../css_Dosyaları/login.css">
+</head>
+<body>
+<div class="container" id="loginForm">
+  <h2>Giriş Yap</h2>
+  <form id="login-form" action="login.php" method="post">
+    <input type="email" id="login-email" placeholder="E-posta" required name="login-email">
+    <input type="password" placeholder="Şifre" required name="login-password">
+    <button type="submit">Giriş Yap</button>
+  </form>
+  <div class="switch">
+    Henüz kaydolmadınız mı? <a href="#" onclick="showSignup()">Kaydol</a>
+  </div>
+</div>
+
+<div class="container" id="signupForm" style="display: none;">
+  <h2>Kaydol</h2>
+  <form id="signup-form" action="login.php" method="post">
+    <input type="text" id="first-name" placeholder="Ad" required name="first-name">
+    <input type="text" id="last-name" placeholder="Soyad" required name="last-name">
+    <input type="email" id="signup-email" placeholder="E-posta" required name="signup-email">
+    <input type="password" placeholder="Şifre" required name="signup-password">
+    <input type="password" placeholder="Şifre Tekrar" required>
+    <button type="submit">Kaydol</button>
+  </form>
+  <div class="switch">
+    Zaten üye misiniz? <a href="#" onclick="showLogin()">Giriş Yap</a>
+  </div>
+</div>
+
+<script src="../js_Dosyaları/login.js"></script>
+</body>
+</html>

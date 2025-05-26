@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+main{
+  margin: 100px 12%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: relative;
+}
+.haber-sayisi{
+  position: absolute;
+  top:-25px;
+  left: -25px;
+  background-color: lightgray;
+}
+.panel-haber-satır:first-child{
+  border-bottom: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.panel-haber-satır{
+  display: inline-flex;
+  color: white;
+  border: 1px solid black;
+}
+.haber-img{
+  flex-basis: 140px;
+  border-right: black 1px solid;
+}
+.haber-icerik{
+  flex: 6 1 0;
+  color: black;
+  display: flex;
+}
+.haber-icerik p{
+  margin-top: 3px;
+}
+.hero-baslik{
+  width: 75%;
+  border-right: black 1px solid;
+  padding:2px 5px;
+}
+.baslik, .baslik-message{
+  width: 100%;
+  overflow-y: auto;
+}
+.hero-tarih{
+  width: 25%;
+  padding:2px 5px;
+}
+.baslik-message, .tarih-message{
+  border-bottom: black 1px dotted;
+  text-align: center;
+}
+.tarih, .tarih-message{
+  width: 100%;
+  text-align: center;
+}
+.update-delete{
+  flex-basis: 140px;
+  flex-shrink: 0.5;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  background:  linear-gradient(90deg, red 50%, deepskyblue 50%);
+}
+.update,.delete{
+  width: 50%;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+}
+.haber-gir{
+  position: absolute;
+  right: 0;
+  bottom:-50px;
+  background-color: green;
+  height: 50px;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

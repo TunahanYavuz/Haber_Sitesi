@@ -1,0 +1,85 @@
+header {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  text-align: center;
+  margin-inline: 8%;
+  display: flex;
+  column-gap: 10px;
+  position: relative;
+}
+
+.news {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 500px;
+  margin: 10px;
+}
+
+aside {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  flex: 1; /* Kenar çubuğu daha dar */
+  margin-top: 10px;
+}
+
+.hero-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  width: 70%;
+  height: 0;
+}
+
+aside {
+  width: 30%;
+  flex-shrink: 1;
+  position: sticky;
+  right: 5px;
+
+}
+.popular-news{
+  margin-bottom: 25px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 500px;
+}
+main a{
+  color: black;
+  text-decoration: none;
+}
+main a:visited{
+  color: #3d3d3d;
+}
+main a:hover{
+  color: rgba(173, 1, 1, 0.7);
+  text-shadow: 8px 8px 16px #f16666,
+  -8px -8px 16px #51e8d0;
+}
+img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+@media screen and (max-width: 1065px) {
+  .hero-news{
+    grid-template-columns: 1fr;
+    width: 60%;
+  }
+  aside{
+    width: 40%;
+  }
+}
